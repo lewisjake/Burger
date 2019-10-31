@@ -1,6 +1,25 @@
 // import mysql connection
 var connection = require('./connection.js');
 
+// function for mysql syntax
+function printQuestionMarks(num) {
+    var arr = [];
+
+    for (var i = 0; i < num; i++) {
+        arr.push("?");
+    }
+    return arr.toString();
+}
+
+// mysql syntax function
+function objToSql(ob) {
+    var arr = [];
+
+    for (var key in ob) {
+        arr.push(key + "=" + ob[key]);
+    }
+    return arr.toString();
+}
 // create orm to handle mysql tasks
 var orm = {
     // function to handle table entries

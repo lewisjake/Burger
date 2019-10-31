@@ -20,7 +20,7 @@ var burger = {
     // the objValsCols variable specifies columns with associated values
     updateOne: function(objValsCols, condition, cb) {
         orm.updateOne('burgers', objValsCols, condition, function(res) {
-            cb(result);
+            cb(res);
         });
     }
 };

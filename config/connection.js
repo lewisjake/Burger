@@ -6,10 +6,10 @@ var connection;
 
 connection = mysql.createConnection({
     port: 3306,
-    host: "localhost",
-    user: "root",
-    password: "Redsox4093!",
-    database: "burgers_db"
+    host: 'localhost',
+    user: 'root',
+    password: 'Redsox4093!',
+    database: 'burgers_db'
 });
 
 connection.connect(function(err) {
