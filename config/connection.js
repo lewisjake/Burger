@@ -16,7 +16,7 @@ if (process.env.JAWSDB_URL) {
         user: 'root',
         password: 'Redsox4093!',
         database: 'burgers_db'
-    })
+    });
 };
 
 connection = mysql.createConnection({
